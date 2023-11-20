@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Easy Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/83949b3c7d.js" crossorigin="anonymous"></script>    <!-- for adding icons/fonts from font awesome use this-->
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/logo1.jpg" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Pooja</span> <br>From India</h1>
+        </div>
+    </div>
+</div>
+
+<!-- About -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <!-- in this i will add image -->
+                <img src="images/user1.jpg" >
+            </div>
+            <div class="about-col-2">
+                <!-- in this i will add details for about me -->
+                <h1 class="sub-title">About Me</h1>
+                <p>Enthusiastic Full Stack Web Developer, equipped with proficiency in both frontend and backend technologies.
+                    Excited about problem-solving and staying updated on industry trends. 
+                    Committed to collaborative teamwork and continuous learning. 
+                    Seeking a dynamic role to apply my skills, contribute innovative ideas, 
+                    and grow in a fast-paced web development environment.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web development</span><br>Web app Development</li>
+                        <li><span>Data Structure and algorithms</span><br>Real Time Problem-Solving</li>
+                        <li><span>IOT</span><br>IoT Project Experience</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>5 Nov 2023 - 5 Dec 2023 </span><br>Intership at CodSoft</li>
+                        <!-- <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span><br>Lorem ipsum dolor sit amet.</li>
+                        <li><span>Lorem ipsum dolor sit.</span><br>Lorem, ipsum dolor.</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>BE/CSE at Chandigarh University</li>
+                        <li><span>2021</span><br>12th Standard from Abohar</li>
+                        <li><span>2019</span><br>10th Standard from Abohar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Desinger</h2>
+                <p>Web developer with expertise in HTML, CSS, JavaScript, and frameworks like React. Experienced in front-end and back-end technologies, collaborating on projects for efficient and user-friendly websites.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Data Structure and Algorithms</h2>
+                <p>Data Structures and Algorithms (DSA) expert proficient in designing efficient algorithms and implementing them in various programming languages. Experienced in solving complex problems, optimizing code, and ensuring scalable solutions.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-wifi"></i>
+                <h2>IOT</h2>
+                <p>IoT professional skilled in designing and implementing innovative solutions for the Internet of Things. Experienced in sensor integration, data analytics, and developing IoT applications. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Build a Weather App With Cities</h3>
+                    <p>Crafted an exquisite Weather App with Cities, delivering unparalleled accuracy and elegance.This app provides real-time weather updates for global cities. </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>Build a Full Stack Authentication App</h3>
+                    <p>This groundbreaking application ensures top-tier data protection while offering a frictionless journey for users, setting new standards in online security and accessibility.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>E-Commerce Website</h3>
+                    <p> Driven and innovative e-commerce entrepreneur with a passion for revolutionizing online shopping experiences.  E-commerce venture that stands out through its unique selling proposition and commitment to customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> jjnsjspoooja@gmail.com</p>
+                <p><i class="fas fa-square-phone-flip"></i> +918837778196</p>
+                <div class="social-icons">
+                    <a href="https://github.com/poojajuneja900"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pooja-juneja-801104232/"><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv1.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © Pooja</p>
+</div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyte2cyN9V2tj8kQ2uAJKmnBGcun9HORH0B4wt_Anr9q7uTtDPp5G_c-N-B9IrZgLGc1Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
